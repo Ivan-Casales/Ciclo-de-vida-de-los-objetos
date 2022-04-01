@@ -15,10 +15,10 @@ namespace ClassLibrary
     {
 
         public static int Contador{get; private set;}
-        public int Id {get; private set;}
+        public string Id {get; private set;}
 
 
-        public Train (int id)
+        public Train (string id)
         {
             Contador ++;
             this.Id = id;
