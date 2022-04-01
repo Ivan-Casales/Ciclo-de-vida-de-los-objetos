@@ -16,12 +16,17 @@ namespace ConsoleApplication
     {
         /// <summary>
         /// Punto de entrada al programa principal.
+        /// Se crean 100 instancias de Train y se imprime el valor de la variable 
+        ///  que contiene la cantidad de objetos creados
         /// </summary>
         public static void Main()
         {
-            var train = new Train();
-            train.StartEngines();
-            Console.WriteLine("Hello World!");
+            for (int i=0; i<100; i++)
+            {
+                new Train(i);
+            }
+
+            Console.WriteLine(Train.Contador);
         }
     }
 }
